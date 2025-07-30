@@ -1,0 +1,146 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/index.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!-- page 01 -->
+    <div class="cc">
+        <div class="cc1 n">
+            <div class="cc11 n1">
+                <div class="n12">
+                    <h1 style="font-size: 60px;">E-Vote</h1>
+                </div>
+            </div>
+            <div class="cc11 n2">
+                <div class="n11">
+                    <a href="{% url 'index' %}" style="font-size: 30px; text-decoration: none; color: black;"><i class="bi bi-house"></i> Home</a>
+                </div>
+            </div>
+            <div class="cc11 n3">
+                <div class="n11">
+                    <a href="{% url 'vote' %}" style="font-size: 30px; text-decoration: none; color: black;"><i class="bi bi-check2-square"></i> Vote</a>
+                </div>
+            </div>
+            <div class="cc11 n4">
+                <div class="n11">
+                    <a href="{% url 'result' %}"style="font-size: 30px; text-decoration: none; color: black;"><i class="bi bi-bar-chart"></i> Result</a>
+                </div>
+            </div>
+            <div class="cc11 n5">
+                <div class="n11" style="border-bottom: 2px solid red">
+                    <a href="{% url 'profile' %}" style="font-size: 30px; text-decoration: none; color: black;"><i class="bi bi-person-fill"></i> Profile</a>
+                </div>
+            </div>
+            <div class="cc11 n6">
+                <div class="n12">
+                </div>
+            </div>
+            <div class="cc11 n7">
+                <div class="n11">
+                <a href="{% url 'logout' %}"><i class="bi bi-box-arrow-right"  style="font-size: 30px;"></i> Log out</a>
+                </div>
+            </div>
+        </div>
+        <div class="cc1 r">
+            <div class="r1 t">
+                <div class="r11">
+                    <div class="r111">
+                        <h1>Dashboard</h1>
+                    </div>
+                </div>
+                <div class="r11">
+                    <div class="r112">
+                        <i class="bi bi-bell" style=font-size:40px; ></i>
+                    </div>
+                </div>
+                <div class="r11">
+                    <div class="r113"></div>
+                </div>
+            </div>
+            <div class="r1 b">
+                <div class="b1">
+                    <div class="b11">
+                        <div class="b111">
+                            <h1>Current Election</h1>
+                        </div>
+                    </div>
+                    <div class="b11">
+                        <div class="b112">
+                            <h2>Presidencial Election 2024</h2>
+                        </div>
+                        <div class="b112">
+                            <div class="b1121">
+                            <a href="{% url 'vote' %}"><input type="button" value="Vote Now" id="vba" ></a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b11"></div>
+                    <div class="b11"></div>
+                    <div class="b11"></div>
+                </div>
+                <div class="b1">
+                    <div class="b12">
+                         <div class="b121">
+                            <h1>Upcoming Election</h1>
+                        </div>
+                    </div>
+                    <div class="b12">
+                         <div class="b122">
+                            <h2>Local Council Election 2024</h2>
+                        </div>
+                        <div class="b122">
+                            <div class="b1221">
+                            <h2>31-0ct-2025</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b12">
+                        <div class="b122">
+                            <h2>School Board Election</h2>
+                        </div>
+                        <div class="b122">
+                            <div class="b1221">
+                            <h2>31-0ct-2025</h2>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b12"></div>
+                    <div class="b12"></div>
+
+                </div>
+                <div class="b1">
+                    <div class="b13">
+                        <div class="b131">
+                            <h2>Past Election</h2>
+                        </div>
+                    </div>
+                    <div class="b13">
+                        <div class="b132">
+                            <h2>Mayoral Election 2024</h2>
+                        </div>
+                        <div class="b132">
+                            <div class="b1321">
+                            <input type="button" value="View Result" >
+                            </div>
+                        </div>
+                    </div>
+                    <div class="b13"></div>
+                    <div class="b13"></div>
+                    <div class="b13"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

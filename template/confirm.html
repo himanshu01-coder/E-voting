@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Vote Submitted</title>
+    <link rel="stylesheet" href="../static/confirm_1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+
+</head>
+
+<body>
+    <div class="cc">
+        <div class="cc1 n">
+            <div class="cc11 n1">
+                <div class="n12">
+                    <h1 style="font-size: 60px;">E-Vote</h1>
+                </div>
+            </div>
+            <div class="cc11 n2">
+                <div class="n11">
+                    <a href="{% url 'index' %}" style="font-size: 30px; text-decoration: none; color: black;"><i class="bi bi-house"></i> Home</a>
+                </div>
+            </div>
+            <div class="cc11 n3">
+                <div class="n11">
+                    <a href="{% url 'vote' %}" style="font-size: 30px; text-decoration: none; color: black;"><i class="bi bi-check2-square"></i> Vote</a>
+                </div>
+            </div>
+            <div class="cc11 n4">
+                <div class="n11">
+                    <a href="{% url 'result' %}"style="font-size: 30px; text-decoration: none; color: black;"><i class="bi bi-bar-chart"></i> Result</a>
+                </div>
+            </div>
+            <div class="cc11 n5">
+                <div class="n11" style="border-bottom: 2px solid red">
+                    <a href="{% url 'profile' %}" style="font-size: 30px; text-decoration: none; color: black;"><i class="bi bi-person-fill"></i> Profile</a>
+                </div>
+            </div>
+            <div class="cc11 n6">
+                <div class="n12">
+                </div>
+            </div>
+            <div class="cc11 n7">
+                <div class="n11">
+                    <a href="{% url 'logout' %}"><i class="bi bi-box-arrow-right" style="font-size: 30px;"></i> Log out</a>
+                </div>
+            </div>
+        </div>
+        <div class="cc1 r">
+            <div class="r1 t">
+                <div class="r11">
+                    <div class="r111">
+                        <h1>Vote submitted</h1>
+                    </div>
+                </div>
+                <div class="r11">
+                    <div class="r112">
+                        <i class="bi bi-bell" style=font-size:40px;></i>
+                    </div>
+                </div>
+                <div class="r11">
+                    <div class="r113"></div>
+                </div>
+            </div>
+            <div class="r1 b">
+                <div class="cv">
+                    <div class="cv1">
+                        <div class="cv11">
+                            <div class="cv111">
+                                <i class="bi bi-shield-check" style="font-size: 80px;"></i>
+                            </div>
+                        </div>
+                        <div class="cv11">
+                            <div class="cv112">
+                                <h1 style="font-size: 45px;">Vote Succesfully Submitted</h1>
+                            </div>
+                        </div>
+                        <div class="cv11">
+                            <div class="cv113">
+                                <h3 style="font-size: 25px; text-align: center;">
+                                    Thank you for participating in the E-election. Your vote has been securely uploaded
+                                </h3>
+                            </div>
+                        </div>
+                        <div class="cv11">
+                            <div class="cv115">
+                                <div class="cv1151">
+                                    <div class="cv11511">
+                                        <a href="{% url 'result' %}"><input type="button" value="View result"  style="height: 100%; width: 100%; border: none;"></a>
+                                    </div>
+                                </div>
+                                <div class="cv1151">
+                                    <div class="cv11512">
+                                        <a href="{% url 'index' %}"><input type="button" value="Go to dashboard" style="height: 100%; width: 100%; border: none;"></a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    </div>
+</body>
+
+</html>

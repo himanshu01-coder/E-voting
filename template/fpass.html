@@ -1,0 +1,55 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/fpass.css">
+</head>
+
+<body>
+    <div class="con">
+    <form method="POST">
+    {% csrf_token %}
+        <div class="con1">
+            <div class="box">
+                <div class="box1">
+                    <h1>Voting system</h1>
+                </div>
+                <div class="box1">
+                    <h3>Forget Password</h3>
+                </div>
+                <div class="box1">
+                  Enter Your email to receive a password reset link
+                </div>
+                <div class="box1">
+                    <input type="email" name="email" placeholder="Email or Username" required>
+
+                </div>
+                <div class="box1">
+                        <input type="submit" value="Send Reset Link" id="btnlg">
+                  
+                </div>
+                <div class="box1">
+
+                </div>
+                <div class="box1">
+                Remember  Your password ?<a href="{% url 'login' %}">Back to Login</a>
+                </div>
+            </div>
+        </div>
+        </form>
+    </div>
+    {% if messages %}
+    <script>
+        {% for message in messages %}
+            alert("{{ message }}");
+        {% endfor %}
+    </script>
+{% endif %}
+</body>
+
+</html>

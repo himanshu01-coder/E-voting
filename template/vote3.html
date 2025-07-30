@@ -1,0 +1,111 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/vote1.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!-- page 01 -->
+    <div class="cc">
+        <div class="cc1 n">
+            <div class="cc11 n1">
+                <div class="n12">
+                    <h1 style="font-size: 60px;">E-Vote</h1>
+                </div>
+            </div>
+            <div class="cc11 n2">
+                <div class="n11">
+                    <a href="{% url 'index' %}" style="font-size: 30px; text-decoration: none; color: black;"><i
+                            class="bi bi-house"></i> Home</a>
+                </div>
+            </div>
+            <div class="cc11 n3">
+                <div class="n11">
+                    <a href="{% url 'vote' %}" style="font-size: 30px; text-decoration: none; color: black;"><i
+                            class="bi bi-check2-square"></i> Vote</a>
+                </div>
+            </div>
+            <div class="cc11 n4">
+                <div class="n11">
+                    <a href="{% url 'result'}" style="font-size: 30px; text-decoration: none; color: black;"><i
+                            class="bi bi-bar-chart"></i> Result</a>
+                </div>
+            </div>
+            <div class="cc11 n5">
+                <div class="n11" style="border-bottom: 2px solid red">
+                    <a href="{% url 'profile'}" style="font-size: 30px; text-decoration: none; color: black;"><i
+                            class="bi bi-person-fill"></i> Profile</a>
+                </div>
+            </div>
+            <div class="cc11 n6">
+                <div class="n12">
+                </div>
+            </div>
+            <div class="cc11 n7">
+                <div class="n11">
+                    <a href="#"><i class="bi bi-box-arrow-right" style="font-size: 30px;"></i> Log out</a>
+                </div>
+            </div>
+        </div>
+        <div class="cc1 r">
+            <div class="r1 t">
+                <div class="r11">
+                    <div class="r111">
+                        <h1>Dashboard</h1>
+                    </div>
+                </div>
+                <div class="r11">
+                    <div class="r112">
+                        <i class="bi bi-bell" style=font-size:40px;></i>
+                    </div>
+                </div>
+                <div class="r11">
+                    <div class="r113"></div>
+                </div>
+            </div>
+            <div class="r1 b">
+                <div class="b1">
+                    <div class="b11">
+                        <div class="b111">
+                            You are about to vote for:
+                        </div>
+                        <div class="b111">
+                            <div class="b1111">
+                                <img src="../static/rahul.jpg" alt="" height="100%" width="100%" style="border-radius:50% ;">
+                            </div>
+                        </div>
+                        <div class="b111">
+                            Rahul Gandhi
+                        </div>
+                        <div class="b111">
+                            <h6> Congress</h6>
+                        </div>
+                        <div class="b111" id="c">
+                            Please ensure your selection is correct. your vote can not be changer after submission
+                        </div>
+                        <div class="b111">
+                            <div class="lc">
+                                <div class="b1112">
+                                    <a href="{% url 'vote' %}"><input type="button" value="Go Back"></a>
+                                </div>
+                                <div class="b1112">
+                                    <a href="{% url 'confirm' %}"><input type="button" value="Confirm Vote"></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

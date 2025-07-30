@@ -1,0 +1,71 @@
+
+.con{
+    height:98vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.box{
+    height: 60vh;
+    width:80%;
+    display:grid;
+    grid-template-rows: 1fr 1fr 1fr  1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr  1fr ;
+    gap: 10px;
+}
+.box1{
+    font-size: 25px;
+    text-align: center;
+
+}
+.box1 input{
+    width: 98%;
+    font-weight: bolder;
+    height: 100%;
+    border: none;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 20px;
+   
+}
+.box3{
+    text-align: end;
+    padding: 0 5px 0 0;
+    color: rgb(0, 170, 255);
+}
+#btnlg{
+    background-color: rgb(0, 170, 255);
+color: white;
+padding: 5PX
+}
+#btnlg:hover{
+    background-color:rgb(140, 198, 236);
+    cursor: pointer;
+}
+.con1{
+    height:65vh;
+    width:50vh;   
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+   background-color: whitesmoke;
+   box-shadow: rgba(17, 17, 26, 0.1) 0px 4px 16px, rgba(87, 87, 191, 0.338) 0px 8px 24px, rgba(17, 17, 26, 0.1) 0px 16px 56px;
+}
+a{
+    text-decoration: none;
+}
+@media screen and (max-width: 480px) {
+    .box1 {
+        font-size: 16px;
+    }
+
+    .box1 input {
+        font-size: 14px;
+        height: 35px;
+    }
+
+    #btnlg {
+        font-size: 14px;
+        padding: 6px;
+    }
+}

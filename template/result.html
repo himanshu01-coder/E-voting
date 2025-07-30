@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="../static/result.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.13.1/font/bootstrap-icons.min.css">
+</head>
+
+<body>
+
+    <!-- page 01 -->
+    <div class="cc">
+        <div class="cc1 n">
+            <div class="cc11 n1">
+                <div class="n12">
+                    <h1 style="font-size: 60px;">E-Vote</h1>
+                </div>
+            </div>
+            <div class="cc11 n2">
+                <div class="n11">
+                    <a href="{% url 'index' %}" style="font-size: 30px; text-decoration: none; color: black;"><i
+                            class="bi bi-house"></i> Home</a>
+                </div>
+            </div>
+            <div class="cc11 n3">
+                <div class="n11">
+                    <a href="{% url 'vote' %}" style="font-size: 30px; text-decoration: none; color: black;"><i
+                            class="bi bi-check2-square"></i> Vote</a>
+                </div>
+            </div>
+            <div class="cc11 n4">
+                <div class="n11">
+                    <a href="{% url 'result' %}" style="font-size: 30px; text-decoration: none; color: black;"><i
+                            class="bi bi-bar-chart"></i> Result</a>
+                </div>
+            </div>
+            <div class="cc11 n5">
+                <div class="n11" style="border-bottom: 2px solid red">
+                    <a href="{% url 'profile' %}" style="font-size: 30px; text-decoration: none; color: black;"><i
+                            class="bi bi-person-fill"></i> Profile</a>
+                </div>
+            </div>
+            <div class="cc11 n6">
+                <div class="n12">
+                </div>
+            </div>
+            <div class="cc11 n7">
+                <div class="n11">
+                    <a href="{% url 'logout' %}"><i class="bi bi-box-arrow-right" style="font-size: 30px;"></i> Log out</a>
+                </div>
+            </div>
+        </div>
+        <div class="cc1 r">
+            <div class="r1 t">
+                <div class="r11">
+                    <div class="r111">
+                        <h1>Dashboard</h1>
+                    </div>
+                </div>
+                <div class="r11">
+                    <div class="r112">
+                        <i class="bi bi-bell" style=font-size:40px;></i>
+                    </div>
+                </div>
+                <div class="r11">
+                    <div class="r113"></div>
+                </div>
+            </div>
+            <div class="r1 b">
+                <div class="rp">
+                    <div class="rp1">
+                        <div class="rp11">
+                            <div class="rp111">
+                                 <h2>Total Votes Cast</h2>
+                                <i class="bi bi-check-circle" style="color: green; font-size: 30PX;"></i>  1,234,567
+
+                            </div>
+                            <div class="rp111">
+                                 <h2>Voter Turnout</h2>
+                                 <i class="bi bi-people" style="color: green; font-size: 30PX;"></i>  65.2%
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rp1">
+                        <div class="rp12">
+                            <div class="rp121">
+                                <div class="rp122">
+                                    <h2>Candinate breakdown</h2>
+                                </div>
+                                <div class="rp122">Candinate A</div>
+                                <div class="rp122"> Candinate B</div>
+                                <div class="rp122">Candinate c</div>
+                                <div class="rp122">Other</div>
+                            </div>
+                            <div class="rp121">
+                                <div class="rp123"></div>
+                                <div class="rp123">550000 Votes</div>
+                                <div class="rp123">40000 votes</div>
+                                <div class="rp123"> 45000 votes</div>
+                                <div class="rp123"> 0 vote</div>
+                            </div>
+                            <div class="rp121">
+                                <div class="rp124"></div>
+                                <div class="rp124">45%</div>
+                                <div class="rp124">30%</div>
+                                <div class="rp124"> 35%</div>
+                                <div class="rp124"> 0%</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="rp1">
+                        <div class="rp13">
+                            <a href="index.html"><input type="button" value="Go to Dashboard"></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>

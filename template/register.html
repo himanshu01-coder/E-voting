@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="../static/register.css">
+</head>
+
+<body>
+    <div class="con">
+        <div class="con1">
+            <form method="POST" action="">
+                {% csrf_token %}
+            <div class="box">
+                 <div class="box1">
+                        <h1>Voting system</h1>
+                    </div>
+                    <div class="box1">
+                        <h3>Register for an Account</h3>
+                    </div>
+                    <div class="box1">
+                        Join us to participate in secure online elections
+                    </div>
+                    <div class="box1">
+                        <input type="text" name="fullname" placeholder="Full Name" required>
+                    </div>
+                    <div class="box1">
+                        <input type="email" name="email" placeholder="Email Address" required>
+                    </div>
+                    <div class="box1">
+                        <input type="text" name="voter_id" placeholder="Voter ID" required>
+                    </div>
+                    <div class="box1">
+                        <input type="password" name="password" placeholder="Password" required>
+                    </div>
+                    <div class="box1">
+                        <input type="password" name="confirm_password" placeholder="Confirm Password" required>
+                    </div>
+                    <div class="box1">
+                        <input type="submit" value="Register" id="btnlg">
+                    </div>
+                    <div class="box1">
+                        Already have an account? <a href="{% url 'login' %}">Log in</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    </div>
+{% if messages %}
+<script>
+    {% for message in messages %}
+        alert("{{ message }}");
+    {% endfor %}
+</script>
+{% endif %}
+
+
+</body>
+
+</html>
